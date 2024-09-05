@@ -9,8 +9,74 @@
      <!-- link daisyUI and tailwindcss  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font manrope  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awasome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- config tailwind.config.js  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'dark3': '#777777',
+                
+              }
+            }
+          }
+        }
+      </script>
+      <!-- style css  -->
+       <style>
+         .manrope {
+            font-family: "Manrope", system-ui;
+            font-optical-sizing: auto;
+          }
+       </style>
 </head>
-<body>
-    <h1>test</h1>
+<body class="manrope">
+  <!-- header  -->
+   <header class="max-w-[1440px] mx-auto " >
+    <!-- banner section  -->
+   <section class="p-4 md:p-8 w-11/12 mx-auto 
+   flex flex-col md:flex-row items-center justify-between
+   ">
+     <!-- banner text  -->
+     <div class="flex-1"> 
+        <h1 class="text-3xl md:text-5xl font-extrabold">It's good <br>
+          tea time at The <br> Tea</h1>
+          <br>
+          <small class="text-dark3 w-fit">Tea and Botanical Solutions Supplier Give Optimum  <br>        Satisfaction To Your Taste Buds.</small>
+          <br>
+          <br>
+          <button class="btn text-white font-bold bg-gradient-to-r from-orange-400 to-red-600 ">Explore More <span class=""><img src="./images/arrow.png" alt=""></span></button>
+     </div>
+     <!--banner  img  -->
+     <div class="flex-1">
+        <div class="relative">
+          <img src="./images/banner.png" alt="Gongo cha" class="w-full">
+          <!-- card  -->
+            <div class=" px-3 py-4 lg:px-7 lg:py-5  w-fit bg-white flex  justify-center items-center gap-4 rounded-xl shadow-md absolute lg:bottom-2 xl:bottom-4 lg:left-12 xl:left-24  left-8 ">
+                <!-- star  -->
+                <div class="text-yellow-400 w-12 h-12"><img src="./images/Group 5.png" alt=""></div>
+                <!-- text  -->
+                 <div>
+                  <h3 class="text-3xl font-extrabold">5.00</h3>
+                <small class="text-dark3">Trust Pilot Ratings</small>
+                 </div>
+            </div>
+        </div>
+
+     </div>
+   </section>
+   </header>
+   <!-- main -->
+    <main></main>
+    <!-- footer  -->
+    <footer></footer>
+    
 </body>
 </html>
